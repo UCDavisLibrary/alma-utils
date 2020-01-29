@@ -67,4 +67,4 @@ See [the Alma Documentation](https://developers.exlibrisgroup.com/alma/apis/docs
 | - | - | - |
 | endpoint | String | The API endpoint to call. Most likely to be `/almaws/v1/analytics/reports` barring extraordinary circumstances. |
 | path | String | Full path to the report. **Must be URL encoded**. Taken from the Analytics UI URL. |
-| format | String | Possible values: `'xml', 'json'`. Determines whether to return an array of XML strings, or JSON objects parsed from the XML, respectively. |
+| format | String **(optional)** | Possible values: `'xml', 'json'`. Determines whether to return an array of XML strings, or JSON objects parsed from the XML, respectively. |
