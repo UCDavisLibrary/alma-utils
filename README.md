@@ -53,7 +53,7 @@ Returns `Array<String|Object>` or `Promise` if not using async/await.
 Because the Alma Reports API sets a limit of 1000 items per request, this function fetches the entire dataset by making multiple requests, then returns an array of the *raw* responses, in either XML (as Strings) or JSON (parsed from the XML) format.
 
 ```js
-const reportsEndpoint = '/almaws/v1/analytics/reports';
+const reportsEndpoint = 'almaws/v1/analytics/reports';
 
 // Raw XML
 const xmlResponse = await AlmaUtils.fetchReport( reportsEndpoint, 'YOUR REPORTS PATH', 'xml' );
@@ -65,6 +65,6 @@ See [the Alma Documentation](https://developers.exlibrisgroup.com/alma/apis/docs
 
 | Argument | Type | Description |
 | - | - | - |
-| endpoint | String | The API endpoint to call. Most likely to be `/almaws/v1/analytics/reports` barring extraordinary circumstances. |
+| endpoint | String | The API endpoint to call. Most likely to be `almaws/v1/analytics/reports` barring extraordinary circumstances. |
 | path | String | Full path to the report. **Must be URL encoded**. Taken from the Analytics UI URL. |
 | format | String<br>**(optional)** | Possible values: `'xml', 'json'`<br>Default: `'xml'`<br>Determines whether to return an array of XML strings, or JSON objects parsed from the XML, respectively. |
