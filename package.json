@@ -1,0 +1,28 @@
+{
+  "name": "alma-utils",
+  "version": "1.0.0",
+  "description": "A Javascript library to abstract Ex Libris Alma API functionality into easy to use Javascript functions.",
+  "url": "https://github.com/UCDavisLibrary/alma-utils",
+  "homepage": "https://github.com/UCDavisLibrary/alma-utils",
+  "main": "dist/index.js",
+  "author": "UC Davis Library",
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/node": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "babel-jest": "^25.1.0",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.0",
+    "xml-js": "^1.6.11"
+  },
+  "scripts": {
+    "start": "babel-node src/index.js",
+    "doctoc": "npx doctoc README.md --github",
+    "build": "webpack --mode=production",
+    "publish": "npm run doctoc && npm run build && npm publish"
+  }
+}
