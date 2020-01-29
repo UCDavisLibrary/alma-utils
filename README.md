@@ -41,7 +41,7 @@ const AlmaUtils = initAlmaUtils( config );
 | - | - | - |
 | host | String | The Ex Libris server URL where the Alma API is hosted. |
 | apiKey | String | The API key provisioned for your organization. |
-| maxRequestsPerSecond | Number | Maximum concurrent requests per second. The maximum value for this as of writing is 25. |
+| maxRequestsPerSecond | Number<br>**(optional)** | Default value: `25`<br>Maximum concurrent requests per second. The maximum value for this as of writing is 25. |
 
 ## API
 
